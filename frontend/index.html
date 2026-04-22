@@ -2,25 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Service - Home</title>
+    <title>UrbanService | Home Services</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <h1><a href="/">UrbanService</a></h1>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/book">Book Service</a></li>
-            <li><a href="/track">Track Worker</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <h2>Welcome to UrbanService</h2>
-        <p>Your one-stop solution for home services. Book plumbers, electricians, and cleaners instantly and track them in real-time.</p>
-        <br>
-        <button onclick="window.location.href='/book'">Book a Service Now</button>
-    </div>
+    <header>
+        <div class="logo"><strong>Urban</strong>Service</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for 'Kitchen cleaning'">
+        </div>
+        <div class="user-menu">🛒 Profile</div>
+    </header>
+
+    <main class="hero-section">
+        <div class="service-selection">
+            <h1>What are you looking for?</h1>
+            <div class="service-grid">
+                <div class="service-card" onclick="bookService('Women\'s Salon')">
+                    <p>💆‍♀️</p>
+                    <p>Women's Salon</p>
+                </div>
+                <div class="service-card" onclick="bookService('AC Repair')">
+                    <p>❄️</p>
+                    <p>AC Repair</p>
+                </div>
+                <div class="service-card" onclick="bookService('Cleaning')">
+                    <p>🧹</p>
+                    <p>Cleaning</p>
+                </div>
+                <div class="service-card" onclick="bookService('Electrician')">
+                    <p>⚡</p>
+                    <p>Electrician</p>
+                </div>
+                </div>
+        </div>
+
+        <div class="image-montage">
+            <img class="img-large" src="https://images.unsplash.com/photo-1581578731548-c64695ce6958?auto=format&fit=crop&w=800" alt="Cleaning">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400" alt="Repair">
+            <img src="https://images.unsplash.com/photo-1521203352944-80c41ee403c6?auto=format&fit=crop&w=400" alt="Salon">
+        </div>
+    </main>
+
     <script src="js/main.js"></script>
 </body>
 </html>
