@@ -1,11 +1,9 @@
 {
   "name": "urbanservice",
   "version": "1.0.0",
-  "description": "Urban service booking and tracking platform",
   "main": "backend/server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "start": "node backend/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
